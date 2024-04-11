@@ -169,7 +169,7 @@ nav {
 
 /* Adiciona regras para dispositivos com largura menor ou igual a 768px */
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .autorFoto {
         flex-direction: column;
         /* Altera a direção do fluxo dos elementos para coluna */
