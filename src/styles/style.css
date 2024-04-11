@@ -1,0 +1,480 @@
+/*Body */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+footer {
+    background-color: #2c2d30;
+    color: #fff;
+    text-align: center;
+    padding: 11px 0;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    /* Altura desejada do rodapé */
+    bottom: 0;
+    line-height: 0px;
+    /* Centraliza o texto verticalmente */
+    display: block;
+    /* Alterado de "none" para "block" */
+}
+
+footer img {
+    width: 25px;
+    /* Defina o tamanho do ícone conforme necessário */
+    vertical-align: middle;
+    margin-left: 10px;
+    /* Adicione margem à esquerda para separar o texto e o ícone */
+}
+
+
+Section.sec1 {
+    background-color: #e0e2ee;
+    margin-left: 0%;
+    margin-right: 0%;
+    border: 0;
+}
+
+p {
+    font-size: 25px;
+}
+
+/* Estilo para a figura */
+.autorFoto {
+    margin-bottom: 20px;
+    /* Adiciona espaçamento na parte inferior */
+}
+
+/* Estilo para a seção */
+.sec1 {
+    margin-top: 50px;
+    /* Adiciona espaçamento na parte superior */
+}
+
+/* CSS para logo*/
+.nav-wrapper img {
+    max-width: auto;
+    /* Defina o tamanho máximo desejado */
+    height: 100%;
+    /* Isso garantirá que a proporção seja mantida */
+}
+
+.nav-wrapper .logo {
+    position: relative;
+    /* Para posicionamento relativo */
+}
+
+nav {
+    color: #110202;
+    background-color: #a00a0f;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+.side-nav {
+    background-color: #ffffff;
+    /*navegação de celular*/
+}
+
+/*Começo do codigo para estilização de figure*/
+.autorFoto {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    /* Distribui os itens igualmente na linha */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    flex-direction: row-reverse;
+}
+
+.info {
+    flex-grow: 1;
+    /* Permite que o texto cresça para preencher o espaço restante */
+}
+
+.info h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    size: 22px;
+
+    color: #464646;
+}
+
+.info h1,
+.info p {
+    margin: 0;
+    /* Remove as margens padrão do h1 e p */
+}
+
+/*Começo do codigo para estilização de h1*/
+
+
+/*Fim do codigo para estilização de h1*/
+/*Começo do codigo para estilização de texto*/
+.info p {
+    font-size: 25px;
+    color: #000000;
+}
+
+/*Fim do codigo para estilização de texto*/
+/*Começo do codigo para estilização de letras*/
+.gran {
+    color: #ce5458;
+}
+
+.gran1 {
+    color: #5168d3;
+}
+
+.o {
+    color: #e2771f;
+}
+
+.n {
+    color: #82c3ee;
+}
+
+.e {
+    color: #4f945e;
+}
+
+/*Fim do codigo para estilização de letras*/
+/*Começo do codigo para foto*/
+.autorFoto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    border: 5px solid #110202;
+    /* Adiciona uma borda sólida de cor escura */
+    box-sizing: border-box;
+    /* Garante que a borda se encaixe dentro do tamanho definido */
+}
+
+.autorFoto {
+    opacity: 0;
+    /* Inicialmente, a imagem estará invisível */
+    transition: opacity 1s ease;
+    /* Definindo a transição de opacidade */
+}
+
+.autorFoto {
+    opacity: 1;
+    /* Quando a classe 'visivel' é aplicada, a imagem fica visível */
+}
+
+/* Adiciona regras para dispositivos com largura menor ou igual a 768px */
+@media (max-width: 768px) {
+    .autorFoto {
+        flex-direction: column;
+        /* Altera a direção do fluxo dos elementos para coluna */
+        align-items: center;
+        /* Alinha os itens ao centro na direção da coluna */
+    }
+}
+
+/* fim do codigo para foto*/
+.sec1 {
+    max-width: 100%;
+    /* Define a largura máxima da seção */
+
+}
+
+.sec1 div {
+    width: 100%;
+    /* Define a largura */
+
+}
+
+div .sec1H2 {
+    padding: auto;
+    text-align: center;
+    position: relative;
+    /* Alinha o título no centro */
+}
+
+.textoP,
+.textoP1 {
+    padding: 1.5%;
+    font-size: 25px;
+    /* Tamanho do texto */
+    line-height: 1.6;
+    /* Altura da linha */
+}
+
+
+/* Estilo para as imagens dentro da botao-container */
+.botao-container img {
+    width: 28px;
+    /* Largura desejada para o ícone */
+    height: 28px;
+    /* Altura desejada para o ícone */
+    border: none;
+    /* Remove a borda */
+    border-radius: 0;
+    /* Remove a borda circular */
+    margin-right: 10px;
+    /* Adiciona espaçamento entre as imagens e os textos */
+    vertical-align: middle;
+    /* Alinha verticalmente os elementos */
+}
+
+/* Estilo para os textos ao lado das imagens dentro da botao-container */
+.botao-container span {
+    vertical-align: middle;
+    /* Alinha verticalmente os elementos */
+}
+
+/* Redefinindo os estilos para os links dentro da botao-container */
+.botao-container a {
+    margin-right: 10px;
+    /* Adiciona espaçamento entre os links */
+    border: none;
+    /* Remove a borda */
+    border-radius: 0;
+    /* Remove o border-radius */
+}
+
+/* Redefinindo os estilos para as imagens dentro dos links */
+.botao-container a img {
+    border: none;
+    /* Remove a borda */
+    border-radius: 0;
+    /* Remove o border-radius */
+}
+
+
+.sec2H2 {
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+}
+
+.sec2Img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Para centralizar verticalmente as imagens */
+}
+
+.sec2Img img {
+    width: 100px;
+    /* Defina a largura desejada para as imagens */
+    height: auto;
+    /* Isso garante que a proporção seja mantida */
+}
+
+.sec2Img img {
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o tamanho da div */
+}
+
+.sec2Img img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sec2Img img:hover {
+    transform: scale(1.5);
+    /* Aumenta ligeiramente o tamanho da imagem quando o mouse passa por cima */
+}
+
+.sec3 {
+    padding: 1.5%;
+    /* Adiciona espaço interno */
+}
+
+.sec3H2 {
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+}
+
+.sec3Img {
+    display: flex;
+    justify-content: space-around;
+    /* Espaço igual entre as imagens */
+    align-items: center;
+    /* Para centralizar verticalmente as imagens */
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem para a próxima linha */
+}
+
+.sec3Img img {
+    width: 300px;
+    /* Defina a largura desejada para as imagens */
+    height: auto;
+    /* Isso garante que a proporção seja mantida */
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o tamanho da div */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sec3Img img:hover {
+    transform: scale(1.5);
+    /* Aumenta ligeiramente o tamanho da imagem quando o mouse passa por cima */
+}
+
+@media (max-width: 768px) {
+    .sec3Img img {
+        width: 50%;
+        /* Define a largura para 50% da largura da tela */
+        max-width: none;
+        /* Remove a restrição de largura máxima */
+    }
+}
+
+.sec4 {
+    padding: 1.5%;
+}
+
+.sec4H2 {
+    text-align: center;
+}
+
+.divImg {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem para a linha seguinte se não houver espaço suficiente */
+    justify-content: space-around;
+    align-items: flex-start;
+    border-spacing: 0;
+}
+
+.sec4 img.content-img {
+    width: 315px;
+    /* Defina o tamanho desejado para as imagens */
+    height: 100%;
+    /* Altura padrão, pode ser ajustada conforme necessário */
+    object-fit: cover;
+    /* Escala a imagem para preencher o contêiner sem distorção */
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec4 table {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+}
+
+.sec4 table td {
+    word-wrap: break-word;
+    /* Isso fará com que o texto quebre para uma nova linha se necessário */
+    max-width: 200px;
+    /* Defina o tamanho máximo desejado para cada célula */
+}
+
+.sec5 {
+    padding: 1.5%;
+}
+
+.sec5H2 {
+    text-align: center;
+}
+
+#projetos {
+    flex: 1;
+    /* Faz com que cada div de projeto ocupe a mesma quantidade de espaço disponível */
+    margin: 1px;
+    /* Adiciona um espaçamento entre os projetos */
+}
+
+
+
+.sec6 {
+    padding: 1.5%;
+}
+
+.sec6H2 {
+    text-align: center;
+}
+
+article {
+    border: 7px solid #000000;
+}
+
+
+.projeto {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+}
+
+.botao {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #00d9ff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+/* Estilos para a seção de contato */
+.sec6 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.sec6H2 {
+    text-align: center;
+}
+
+#contactForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #686868;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 2px solid #a19c9c;
+    border-radius: 3px;
+    font-size: 24px;
+}
+
+#contactForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#contactForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #960000;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#contactForm button:hover {
+    background-color: #19962e;
+}
+
+
+
+
