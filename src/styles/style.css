@@ -117,7 +117,6 @@ nav {
 /*Fim do codigo para estilização de h1*/
 /*Começo do codigo para estilização de texto*/
 .info p {
-display: flex;
     font-size: 25px;
     color: #000000;
 }
