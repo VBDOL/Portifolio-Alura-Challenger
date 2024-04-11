@@ -1,3 +1,15 @@
+/* Estilos para telas de celular */
+@media only screen and (max-width: 600px) {
+  /* Adicione seus estilos específicos para telas de celular aqui */
+  
+/* Estilos para telas de tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Adicione seus estilos específicos para telas de tablets aqui */
+
+/* Estilos para telas de desktop */
+@media only screen and (min-width: 1025px) {
+  /* Adicione seus estilos específicos para telas de desktop aqui */
+   
 /*Body */
 body {
     background-color: #ffffff;
@@ -476,6 +488,6 @@ article {
     background-color: #19962e;
 }
 
-
+}}}
 
 
