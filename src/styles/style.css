@@ -58,14 +58,6 @@ Section.sec1 {
     margin-right: 0%;
     border: 0;
 }
-Section.autorFoto {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 0%;
-    width: 100%;
-    height: auto;
-}
 
 p {
     font-size: 25px;
@@ -118,13 +110,13 @@ nav {
 }
 
 .info {
-        text-align: lefth;
+    text-align: center;
 }
 
 .info h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 28px;
     color: #464646;
     margin: 0;
 }
@@ -411,6 +403,10 @@ table {
     justify-content: space-evenly;
 
 }
+
+
+
+
 
 .botao {
     display: inline-block;
