@@ -1,4 +1,5 @@
 /*Body */
+/* Estilos base */
 body {
     background-color: #ffffff;
     margin: 0;
@@ -15,21 +16,40 @@ footer {
     position: absolute;
     width: 100%;
     height: 50px;
-    /* Altura desejada do rodapé */
     bottom: 0;
     line-height: 0px;
-    /* Centraliza o texto verticalmente */
     display: block;
-    /* Alterado de "none" para "block" */
 }
 
 footer img {
     width: 25px;
-    /* Defina o tamanho do ícone conforme necessário */
     vertical-align: middle;
     margin-left: 10px;
-    /* Adicione margem à esquerda para separar o texto e o ícone */
 }
+
+/* Estilos para diferentes tamanhos de tela */
+/* Celulares */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Outros estilos... */
 
 
 Section.sec1 {
@@ -84,42 +104,54 @@ nav {
 /*Começo do codigo para estilização de figure*/
 .autorFoto {
     display: flex;
-    justify-content: space-around;
-    padding: 5%;
-    /* Distribui os itens igualmente na linha */
+    flex-direction: column;
     align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    flex-direction: row-reverse;
+    padding: 20px;
 }
 
 .info {
-    flex-grow: 1;
-    /* Permite que o texto cresça para preencher o espaço restante */
+    text-align: center;
 }
 
 .info h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    size: 22px;
-
+    font-size: 28px;
     color: #464646;
-}
-
-.info h1,
-.info p {
     margin: 0;
-    /* Remove as margens padrão do h1 e p */
 }
 
-/*Começo do codigo para estilização de h1*/
-
-
-/*Fim do codigo para estilização de h1*/
-/*Começo do codigo para estilização de texto*/
 .info p {
-    font-size: 25px;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info p span {
+    font-weight: bold;
+}
+
+.botao-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-container a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
     color: #000000;
 }
+
+.botao-container img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 
 /*Fim do codigo para estilização de texto*/
 /*Começo do codigo para estilização de letras*/
@@ -167,16 +199,6 @@ nav {
     /* Quando a classe 'visivel' é aplicada, a imagem fica visível */
 }
 
-/* Adiciona regras para dispositivos com largura menor ou igual a 768px */
-
-@media (max-width: 450px) {
-    .autorFoto {
-        flex-direction: column;
-        /* Altera a direção do fluxo dos elementos para coluna */
-        align-items: center;
-        /* Alinha os itens ao centro na direção da coluna */
-    }
-}
 
 /* fim do codigo para foto*/
 .sec1 {
@@ -320,14 +342,6 @@ div .sec1H2 {
     /* Aumenta ligeiramente o tamanho da imagem quando o mouse passa por cima */
 }
 
-@media (max-width: 768px) {
-    .sec3Img img {
-        width: 50%;
-        /* Define a largura para 50% da largura da tela */
-        max-width: none;
-        /* Remove a restrição de largura máxima */
-    }
-}
 
 .sec4 {
     padding: 1.5%;
@@ -375,18 +389,35 @@ table {
 
 .sec5 {
     padding: 1.5%;
+
 }
 
 .sec5H2 {
     text-align: center;
 }
 
-#projetos {
-    flex: 1;
-    /* Faz com que cada div de projeto ocupe a mesma quantidade de espaço disponível */
-    margin: 1px;
-    /* Adiciona um espaçamento entre os projetos */
+.projetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
+
+
+
+
+
+.botao {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #00d9ff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 24px;
+}
+
 
 
 
@@ -403,29 +434,11 @@ article {
 }
 
 
-.projeto {
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 10px;
-}
 
-.projeto img {
-    width: 100%;
-    height: auto;
-}
-
-.botao {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px;
-    background-color: #00d9ff;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 24px;
-}
 
 
 /* Estilos para a seção de contato */
+
 .sec6 {
     padding: 20px;
     background-color: #f9f9f9;
@@ -475,7 +488,3 @@ article {
 #contactForm button:hover {
     background-color: #19962e;
 }
-
-}}}
-
-
