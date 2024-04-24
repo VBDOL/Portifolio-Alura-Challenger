@@ -39,8 +39,7 @@ Não há aulas específicas para o desafio, por isso devemos desenvolver com o c
 
 - **Semana 1:** Desenvolvimento das estruturas e estilizações. No meu caso, escolhi desenvolver em HTML e CSS.
 - **Semana 2:** Implementação do JavaScript,.
-- **Semana 3:** Validações dos formulários (cadastro de produtos). Finalização do projeto com cadastro dos itens no banco de dados.
-
+- **Semana 3:** Validações dos formulários para envios de email.
 ### 🏅 Badges recebidas pelo projeto
 
 <table style="text-align: center;">
