@@ -46,7 +46,7 @@ Não há aulas específicas para o desafio, por isso devemos desenvolver com o c
 <table style="text-align: center;">
   <tr>
     <td>
-      <img height="150px" src="/src/assets/Badge/Badge-Portfolio.png">
+      <img height="150px" src="/src/assets/imgs/Badge-Portfolio.png">
     </td>
      <tr>
     <td>Challenge Portfólio</td>
